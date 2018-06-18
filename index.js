@@ -41,16 +41,17 @@ buttons.addEventListener("click", (event) => {
   
   function addSomeInformation() {
     if (
-          document.getElementById("firstname").value === "" ||
+          
           document.getElementById("lastname").value === "" ||
+      document.getElementById("firstname").value === "" ||
           document.getElementById("middlename").value === ""
        )
       console.log("is full");
     else {
       document.getElementById("try").style.display = "none";
        
-    first   = document.getElementById("firstname").value;
-    second  = document.getElementById("lastname").value;
+    first   = document.getElementById("lastname").value;
+    second  = document.getElementById("firstname").value;
     third   = document.getElementById("middlename").value;
     values  = [[first,second,third]];
 
